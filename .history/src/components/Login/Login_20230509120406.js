@@ -12,7 +12,6 @@ const Login = (props) => {
   const [formIsValid, setFormIsValid] = useState(false);
 
   /**
-   * Cleanup function is executed in begining of the second execution withount including the first execution
    * userEffects use cases : 
    */
   //CASE 1: without dependencies : 
