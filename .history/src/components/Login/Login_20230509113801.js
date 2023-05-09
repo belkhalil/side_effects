@@ -11,15 +11,15 @@ const Login = (props) => {
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
 
-  //Adding timout is called debounds operattion 
+
   useEffect(() => {
-    const identifier = setTimeout(() => {
+    const identifier = setTimeout(()=>{
       console.log('checking form validity!')
-      setFormIsValid(
-        enteredEmail.includes('@') && enteredPassword.trim().length > 6
-      );
-    }, 500)
-    return () => {
+     setFormIsValid(
+      enteredEmail.includes('@') && enteredPassword.trim().length > 6
+    ); 
+    },500)
+    return ()=>{
       console.log('CLEANUP');
       clearTimeout(identifier);
     };

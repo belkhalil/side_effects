@@ -11,7 +11,7 @@ const Login = (props) => {
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
 
-  //Adding timout is called debounds operattion 
+
   useEffect(() => {
     const identifier = setTimeout(() => {
       console.log('checking form validity!')
